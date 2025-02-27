@@ -28,6 +28,7 @@ export async function subscribeToEvent({
     .values({
       name,
       email,
+      invitedBySubscriberId: invitedBySubscriberId ?? null
     })
     .returning({
       subscriberId: schema.subscriptions.id,

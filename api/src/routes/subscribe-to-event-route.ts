@@ -8,7 +8,7 @@ export const subscribeToEventRoute: FastifyPluginAsyncZod = async app => {
     {
       schema: {
         summary: 'Subscribe to event',
-        tags: ['subscriptions'],
+        tags: ['Subscriptions'],
         operationId: 'subscribeToEvent',
         body: z.object({
           name: z.string(),

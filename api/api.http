@@ -5,22 +5,22 @@ POST http://{{host}}/subscriptions
 Content-Type: application/json
 
 {
-  "name": "User", //Usuario que será cadastrado
-  "email": "user@devstage.team", //E-mail
-  "referrer": "1cbbb6e3-4a0e-4acb-89e3-bd65d1a9abff" // ID do usuário que indicou
+  "name": "Diego Ferreira", //Usuario que será cadastrado
+  "email": "diego.ferreira@devstage.team", //E-mail
+  "referrer": "83f43dbf-45cc-4b5d-a102-eacbfdc58e45" // ID do usuário que indicou
 }
 
 ### Access invite link
-GET http://{{host}}/invites/0fd5dc41-bd53-452e-929e-405461189e86
+GET http://{{host}}/invites/83f43dbf-45cc-4b5d-a102-eacbfdc58e45
 
 ### Get subscriber invites clicks
-GET http://{{host}}/subscribers/0fd5dc41-bd53-452e-929e-405461189e86/ranking/clicks
+GET http://{{host}}/subscribers/83f43dbf-45cc-4b5d-a102-eacbfdc58e45/ranking/clicks
 
 ### Get subscriber invites count
-GET http://{{host}}/subscribers/0fd5dc41-bd53-452e-929e-405461189e86/ranking/count
+GET http://{{host}}/subscribers/83f43dbf-45cc-4b5d-a102-eacbfdc58e45/ranking/count
 
 ### Get subscriber ranking position
-GET http://{{host}}/subscribers/0fd5dc41-bd53-452e-929e-405461189e86/ranking/position
+GET http://{{host}}/subscribers/83f43dbf-45cc-4b5d-a102-eacbfdc58e45/ranking/position
 
 ### Get ranking
 GET http://{{host}}/ranking
