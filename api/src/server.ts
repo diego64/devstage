@@ -17,6 +17,7 @@ import { getSubscriberInvitesClicksRoute } from './routes/get-subscriber-invites
 import { getSubscriberInvitesCountRoute } from './routes/get-subscriber-invites-count-route'
 import { getSubscriberRankingPositionRoute } from './routes/get-subscriber-ranking-position'
 import { getRankingRoute } from './routes/get-ranking-route'
+import { sendMessageRoute } from './routes/send-message-route'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -29,7 +30,7 @@ app.register(fastifySwagger, {
   openapi: {
     info: {
       title: "API Dev-Stage",
-      version: "0.0.2"
+      version: "1.0.2"
       }
     },
     transform: jsonSchemaTransform
@@ -45,6 +46,7 @@ app.register(getSubscriberInvitesClicksRoute)
 app.register(getSubscriberInvitesCountRoute)
 app.register(getSubscriberRankingPositionRoute)
 app.register(getRankingRoute)
+app.register(sendMessageRoute)
 
 app.listen({ port: env.PORT }).then(() => {
   console.log('API DEV STAGE IS RUNNING!')

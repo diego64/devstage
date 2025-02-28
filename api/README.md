@@ -17,9 +17,12 @@
     <img src="/img.shields.io/badge/swagger.svg?style=flat&logo=swagger&logoColor=white" alt="swagger">
 </p>
 
-### ⚙️ Installation
+### ⚙️ Requirements to run the API
 
-<h4>From <code>source</code></h4>
+- Docker
+- An OpenAI account if you want to use the route with artificial intelligence
+
+### ⚙️ Installation
 
 > 1. Clone the repository:
 >
@@ -41,15 +44,11 @@
 > $ docker compose up -d
 > $ docker container ls
 > ```
-> 5. Generate the SQL commands:
-> ```console
-> $ npx drizzlet-kit generate
-> ```
-> 5. Generate the migrate:
+> 4. Generate the migrate:
 > ```console
 > $ npx drizzlet-kit migrate
 > ```
-> 6. Start the application:
+> 5. Start the application:
 > ```console
 > $ npm run start:dev
 > ```

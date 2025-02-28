@@ -24,3 +24,21 @@ GET http://{{host}}/subscribers/83f43dbf-45cc-4b5d-a102-eacbfdc58e45/ranking/pos
 
 ### Get ranking
 GET http://{{host}}/ranking
+
+### Message to be executed on the PostgreSQL database
+
+POST http://{{host}}/messages
+Content-Type: application/json
+
+{
+  "message": "Quantos inscritos possuem e-mails com dominio @gmail.com?"
+}
+
+### Message to be executed on the Redis database
+
+POST http://{{host}}/messages
+Content-Type: application/json
+
+{
+  "message": "Me diga o nome do usuário com maior número de pontuação no ranking!"
+}
