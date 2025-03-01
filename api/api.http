@@ -5,9 +5,9 @@ POST http://{{host}}/subscriptions
 Content-Type: application/json
 
 {
-  "name": "Diego Ferreira", //Usuario que será cadastrado
-  "email": "diego.ferreira@devstage.team", //E-mail
-  "referrer": "83f43dbf-45cc-4b5d-a102-eacbfdc58e45" // ID do usuário que indicou
+  "name": "Usuario convidado",
+  "email": "usuario.convidado@gmail.com",
+  "referrer": "83f43dbf-45cc-4b5d-a102-eacbfdc58e45"
 }
 
 ### Access invite link
